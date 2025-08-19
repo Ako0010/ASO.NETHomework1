@@ -30,7 +30,7 @@ public class User
         {
             connection.Open();
 
-            using (var command = new SqlCommand($"SELECT * FROM Users", connection))
+            using (var command = new SqlCommand($"SELECT * FROM Users WHERE UserName = '{user.UserName}'", connection))
             using (var reader = command.ExecuteReader())
             {
                 if (reader.Read())
