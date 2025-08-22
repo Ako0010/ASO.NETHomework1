@@ -10,14 +10,13 @@ public class User
 
    static string connectionString = @"Server=(localdb)\MSSQLLocalDB;Database=Userss;Trusted_Connection=True;";
 
-    public int Id;
-    public string UserName;
-    public string Password;
-    public string FirstName;
-    public string LastName;
-    public int Age;
-    public bool Gender;
-
+    public int Id { get; set; }
+    public string UserName { get; set; }
+    public string Password { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public int Age { get; set; }
+    public bool Gender { get; set; }
 
     static public void SignUp()
     {
